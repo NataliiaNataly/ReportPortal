@@ -1,0 +1,8 @@
+When using Docker extensively, the management of several different containers quickly becomes cumbersome.
+Docker Compose is a tool that helps us overcome this problem and easily handle multiple containers at once.
+In this tutorial, we’ll examine its main features and powerful mechanisms.
+In short, Docker Compose works by applying many rules declared within a single docker-compose.yml configuration file.
+These YAML rules, both human-readable and machine-optimized, provide an effective way to snapshot the whole project from ten-thousand feet in a few lines.
+We can get dozens of configurations applied by Compose under the hood. This will save us the hassle of scripting them with Bash or something else.
+In this file, we need to specify the version of the Compose file format, at least one service, and optionally volumes and networks.
+For example, let’s take a dockerized web application consisting of a front end, a back end, and a database. We’d likely split these components into three images, and define them as three different services in the configuration.
