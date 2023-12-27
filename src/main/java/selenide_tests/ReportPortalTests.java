@@ -11,6 +11,7 @@ import selenide_tests.page_elements.FilterModal;
 import selenide_tests.page_elements.LoginPage;
 import selenide_tests.page_elements.MainPage;
 import selenide_tests.page_elements.SideBarPage;
+import utils.CustomLogger;
 import utils.dto.User;
 
 @Listeners({ScreenShooter.class})
@@ -58,5 +59,6 @@ public class ReportPortalTests {
         filterModal.fillInInputFieldOnModalWithRandomValueAndSaveIt();
         filterModal.clickOnBtnByName("Add");
         sideBarPage.checkSideBarIsVisible();
+        CustomLogger.getLogger().info("SUCCESS");
     }
 }
